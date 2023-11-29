@@ -10,8 +10,16 @@ using System.Threading.Tasks;
 
 namespace DarDeAlta.Servicios
 {
+    /// <summary>
+    /// Clase donde se encontrarán las funciones que puede hacer el usuario a los usuarios creados.
+    /// 171123 - chi
+    /// </summary>
     internal class NuevoImplementacion : NuevoInterfaz
     {
+        /// <summary>
+        /// Implementación donde se eliminará al usuario por la referencia de memoria.
+        /// 281123 - chi
+        /// </summary>
         public void borrarCliente(List<ClientesDto> listaAntigua)
         {
             MenuInterfaz mi = new MenuImplementacion();
@@ -31,32 +39,35 @@ namespace DarDeAlta.Servicios
         }
 
 
-            //Posición
-            /**  int i;
-              bool aBorrar = false;
+        //Posición
+        /**  int i;
+          bool aBorrar = false;
 
-              for (i = 0; i < listaAntigua.Count(); i++) 
+          for (i = 0; i < listaAntigua.Count(); i++) 
+          {
+
+              if (listaAntigua[i].DniCliente.Equals(dniPedido)) 
               {
-
-                  if (listaAntigua[i].DniCliente.Equals(dniPedido)) 
-                  {
-                      aBorrar = true;
-                      break;
-                  }
+                  aBorrar = true;
+                  break;
               }
-              if(aBorrar) 
-              { 
-                  listaAntigua.RemoveAt(i);
-              }
-              else
-              {
-                  Console.WriteLine("El cliente no existe");
-              }
+          }
+          if(aBorrar) 
+          { 
+              listaAntigua.RemoveAt(i);
+          }
+          else
+          {
+              Console.WriteLine("El cliente no existe");
+          }
 
-              
-          }*/
-
-            public void darAltaCliente(List<ClientesDto> listaAntigua)
+          
+      }*/
+        /// <summary>
+        /// Implementación que añadirá un cliente.
+        /// 281123 - chi
+        /// </summary>
+        public void darAltaCliente(List<ClientesDto> listaAntigua)
             {
 
 
@@ -108,7 +119,10 @@ namespace DarDeAlta.Servicios
                 return clienteNuevo;
 
             }
-
+        /// <summary>
+        /// Implementación donde se accederá al menú y modificará al usuario
+        /// 291123 - chi
+        /// </summary>
         public void modificarCliente(List<ClientesDto> listaAntigua)
             {
                 

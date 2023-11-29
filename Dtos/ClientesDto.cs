@@ -81,8 +81,11 @@ namespace DarDeAlta.Dtos
                 
               }
      }
-
-        internal class CuentasDto
+    /// <summary>
+    /// lista donde se encuentran los tipos de datos a introducir
+    /// 151123 - chi
+    /// </summary>
+    internal class CuentasDto
         {
             long idCuenta;
 

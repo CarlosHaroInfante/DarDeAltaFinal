@@ -7,8 +7,16 @@ using DarDeAlta.Dtos;
 
 namespace DarDeAlta.Servicios
 {
+    /// <summary>
+    /// Clase donde se encontrarán las funciones que puede hacer a las cuentas creadas.
+    /// 221123 - chi
+    /// </summary>
     internal class CuentaImplementacion : CuentaInterfaz
     {
+        /// <summary>
+        /// Dar de alta una cuenta bancaria asociada con el cliente.
+        /// 221123 - chi
+        /// </summary>
         public void nuevaCuenta(List<CuentasDto> cuentaAntigua)
         {
             CuentasDto cuentaNueva = crearCuentaNueva();
@@ -17,6 +25,7 @@ namespace DarDeAlta.Servicios
         }
         /// <summary>
         /// Dar de alta una cuenta bancaria asociada con el cliente.
+        /// 221123 - chi
         /// </summary>
         /// <returns>La nueva cuenta Bancaria con la información solicitada</returns>
         private CuentasDto crearCuentaNueva() 

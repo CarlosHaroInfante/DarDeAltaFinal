@@ -28,14 +28,20 @@ namespace DarDeAlta.Servicios
 
             return opcion;
         }
-
+        /// <summary>
+        /// Método que pedirá el dni del cliente que se usará para poder borrar o modificar el usuario
+        /// 281123 - chi
+        /// </summary>
         public string pedirDNI() {
 
             Console.WriteLine("Indica el DNI del Cliente");
             string dniCliente = Console.ReadLine();
             return dniCliente;
         }
-
+        /// <summary>
+        /// Método que mostrará el menú para modificar los campos del usuario.
+        /// 281123 - chi
+        /// </summary>
         public int seleccion() {
 
             Console.WriteLine("Elemento que desea modificar");

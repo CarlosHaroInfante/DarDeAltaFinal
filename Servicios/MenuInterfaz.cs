@@ -14,8 +14,16 @@ namespace DarDeAlta.Servicios
         /// </summary>
         public int menu();
 
+        /// <summary>
+        /// Interfaz donde se pedirá el dni.
+        /// 281123 - chi
+        /// </summary>
         public string pedirDNI();
 
+        /// <summary>
+        /// Interfaz donde se encontrará el menú de modificación del usuario.
+        /// 281123 - chi
+        /// </summary>
         public int seleccion();
     }
 }
